@@ -1,0 +1,10 @@
+# file that describe test as yml format
+- name: Echo with quotes
+  stdin: echo "Hello World"
+
+- name: Pipe missing right
+  stdin: echo hello. |
+  checks:
+    - has_stderr
+    - exitcode
+    - stdout

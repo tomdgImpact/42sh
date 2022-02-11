@@ -1,0 +1,1 @@
+all_sources += files('parse_input.c')
